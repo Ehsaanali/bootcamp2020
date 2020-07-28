@@ -31,5 +31,5 @@ jobs:
     - name: Install Surge
       run: npm install --global surge
     - name: Deploy Surge
-      run: surge ./ six-kitty.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run: surge ./build six-kitty.surge.sh --token ${{ secrets.SURGE_TOKEN }}
       
